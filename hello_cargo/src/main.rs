@@ -19,4 +19,17 @@ fn main() {
     io::stdin().read_line(&mut input).expect("Faild to real line");
     println!("{}", input);
 
+    let x: i32 =20;
+    if x != 20{
+        println!("X is 20")
+    }else{
+        println!("Not answer")
+    }
+
+    let arr: [i32; 5] = [3, 4, 5, 6, 9];
+    let slice: &[i32] = &arr[2 .. 5];
+
+    println!("{}", slice.iter().sum::<i32>());
+    println!("{:?}", slice);
+
 }
